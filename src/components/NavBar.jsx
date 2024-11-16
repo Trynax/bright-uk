@@ -5,7 +5,7 @@ export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isDropDownOpen, setIsDropDownOpen] = useState(false)
   return (
-    <nav className='absolute top-0 left-0  w-full z-50 bg-black opacity-50 py-2 text-white'>
+    <nav className='fixed top-0 left-0  w-full z-50 bg-black opacity-50 py-2 text-white'>
         <div className='max-w-7xl  mx-auto px-4 sm:px6 lg:px-8 flex items-center justify-between h-16'>
             <div className=' flex items-center'>
                 <img src={Logo} alt="Company Logo" className='w-10 h-10' />
@@ -43,7 +43,7 @@ export default function NavBar() {
             </div>
 
             <div>
-                <button className='px-3 py-2 text-yellow-400 text-lg border-yellow-400 border-2 rounded-md'>Contact me</button>
+                <button className='hidden md:flex px-3 py-2 text-yellow-400 text-lg border-yellow-400 border-2 rounded-md'>Contact me</button>
             </div>
             <div className="md:hidden">
           <button
