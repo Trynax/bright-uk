@@ -4,6 +4,8 @@ import MeetBright from "./components/MeetBright"
 import Partners from "./components/Partners"
 import Speakers from "./components/Speakers"
 import BookCards from "./components/BookCards"
+import Reviews from "./components/Reviews"
+import Footer from "./components/Footer"
 function App() {
   return (
     <>
@@ -13,6 +15,8 @@ function App() {
       <MeetBright/>
       <Speakers/>
       <BookCards/>
+      <Reviews/>
+      <Footer/>
     </>
   )
 }
