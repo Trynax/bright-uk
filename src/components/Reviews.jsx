@@ -37,7 +37,7 @@ export default function Reviews() {
                     <button className='text-6xl'>&rarr;</button>
                 </div>
 
-                <div className='flex gap-3 '>
+                <div className='flex gap-3 mt-4'>
                     {customersIcons.map((customerIcon)=>{
                         return <img className='w-10 h-10' key={customerIcon} src={customerIcon} alt="customer Icon" />
                     })}

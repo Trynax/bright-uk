@@ -13,29 +13,34 @@ export default function NavBar() {
 
             <div className='hidden md:flex space-x-16'> 
                 <a href="#" className='hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400 '>Home</a>
-                <div className='relative group' onMouseEnter={()=>setIsDropDownOpen(true)} onMouseLeave={()=>setIsDropDownOpen(false)}>
-                    <button className='flex items-center space-x-1 hover:text-yellow-400'>
-                        <span>About</span>
-                        <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="w-4 h-4"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-                    </button>
-                    {isDropDownOpen &&(
-                          <div className="absolute left-0 mt-2 w-40 bg-white text-black rounded">
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-800">Speaker</a>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-800">Entrepreneur</a>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-800">Author</a>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-800">Trainer</a>
-                        </div>
-                    )}
-                </div>
+                <div
+  className="relative group"
+  onMouseEnter={() => setIsDropDownOpen(true)}
+  onMouseLeave={() => setIsDropDownOpen(false)}
+>
+  <button className="flex items-center space-x-1 hover:text-yellow-400">
+    <span>About</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-4 h-4"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  {isDropDownOpen && (
+    <div className="absolute left-0 mt-2 w-40 bg-white text-black rounded shadow-lg">
+      <a href="#" className="block px-4 py-2 hover:bg-gray-800">Speaker</a>
+      <a href="#" className="block px-4 py-2 hover:bg-gray-800">Entrepreneur</a>
+      <a href="#" className="block px-4 py-2 hover:bg-gray-800">Author</a>
+      <a href="#" className="block px-4 py-2 hover:bg-gray-800">Trainer</a>
+    </div>
+  )}
+</div>
+
                 <a href="#" className="hover:text-yellow-400">Shop</a>
                 <a href="#" className="hover:text-yellow-400">Gallery</a>
                 <a href="#" className="hover:text-yellow-400">Blog</a>
